@@ -1,0 +1,4 @@
+<!--pages/poker/poker.wxml-->
+<view class="page">
+  我是 扑克牌模式
+</view>

@@ -1,0 +1,38 @@
+/* pages/index/index.wxss */
+
+/* 公共样式 */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 200rpx;
+}
+
+.stage, .calc-24, .poker, .race, .about {
+  margin: 20rpx 0;
+}
+
+/* 图片方案（感觉不美观、友好，暂时去掉） */
+/* .top, .mid, .bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.stage, .about {
+  width: 640rpx;
+  height: 250rpx;
+}
+
+.calc-24 {
+  width: 320rpx;
+  height: 320rpx;
+}
+
+.poker, .race {
+  width: 320rpx;
+  height: 125rpx;
+} */

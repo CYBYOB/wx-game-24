@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "case-list": "/components/case-list/case-list"
+  }
+}

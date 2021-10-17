@@ -1,0 +1,43 @@
+<!--pages/calc-24/calc-24.wxml-->
+<view class="page">
+  <view class="top">
+    <!-- TODO：目前 紧支持 输入整数（正、负、0 均可），但尚未放开 浮点数。 -->
+    <view class="tip">
+      请依次输入 4 个数字：
+    </view>
+    <view class="number-list">
+      <block wx:for="{{numberList}}">
+        <input id='{{index}}' class="number-item" type="number" 
+          value="{{item}}" bindinput="onInputNumber" 
+        />
+      </block>
+    </view>
+  </view>
+
+  <!-- TODO：下面2块区域需要加 各种loading 效果等 -->
+  <view class="mid">
+    <view class="calc-24-wrapper">
+      <button class="calc-24 cu-btn lg bg-grey" bindtap="onClickCalculate24">计算 24 点</button>
+    </view>
+  </view>
+
+  <!-- 结果展示 -->
+  <view class="result-wrapper">
+    <scroll-view scroll-x class="bg-white nav">
+      <view class="flex text-center" bindtap="onChangeCaseView">
+        <block wx:for="{{caseList}}">
+          <view id='{{index}}' class="cu-item flex-sub {{caseCurIndex === index ? 'text-orange cur' : '' }}">
+            {{item}}
+          </view>
+      </block>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view wx:if="{{caseList[caseCurIndex] === '组合'}}">
+    <case-list caseList='{{allCaseList}}'></case-list>
+  </view>
+  <view wx:else>
+    <case-list caseList='{{allValidCaseList}}'></case-list>
+  </view>
+</view>

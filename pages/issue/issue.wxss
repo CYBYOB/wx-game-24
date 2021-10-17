@@ -1,0 +1,36 @@
+/* pages/issue/issue.wxss */
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.mid {
+  display: flex;
+}
+.number-list {
+  display: flex;
+}
+.number-item-wrapper {
+  position: relative;
+}
+.number-item-wrapper.hidden {
+  visibility: hidden;
+}
+/* 数值的左上角图标（用于区分运算顺序，因为 - 、 / 不满足交换律） */
+.tag-icon {
+  position: absolute;
+  left: 10px;
+  top: -8px;
+}
+.number-item {
+  width: 100rpx !important;
+}
+
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx 0 40rpx;
+}

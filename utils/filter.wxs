@@ -1,0 +1,26 @@
+var filter = {
+  // 使用 除法 运算符时，可能会出现 浮点数（无限个小数位、不美观） 。
+  fixFloat: function(value){
+    // 优化：小程序BUG —— [undefined, ''].includes(value) 会报错，说 includes 不是1个函数 。
+    // 优化：undefined、'' 等 写在 等号 的 左边（避免写错 = ）。
+    // 注意（异常）：可以 undefined = xx、不会报错，不过 换成 null、'' 会报错。
+    if ((undefined === value) || ('' === value)) {
+      return '';
+    }
+    if(parseInt(value) == value) {
+      return value;
+    }
+    
+    return value.toFixed(2);
+  },
+
+  // 计算数组的长度
+  getLengthOfList: function(list = []) {
+    return list.length;
+  }
+}
+
+module.exports = {
+  getLengthOfList: filter.getLengthOfList,
+  fixFloat: filter.fixFloat,
+}

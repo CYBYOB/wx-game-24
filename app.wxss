@@ -1,0 +1,17 @@
+/**app.wxss**/
+/* 引入 color ui 的样式 */
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+
+.page {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+
+
+/* 边框线 */
+/* .border-all {
+  border: 3rpx solid #eee;
+} */

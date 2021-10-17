@@ -1,0 +1,23 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/calc-24/calc-24",
+    "pages/stage/stage",
+    "components/case-list/case-list",
+    "pages/issue/issue",
+    "pages/poker/poker",
+    "pages/race/race",
+    "pages/about/about"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "疯狂24点",
+    "navigationBarTextStyle":"black"
+  },
+  "usingComponents": {
+      "cu-custom":"/colorui/components/cu-custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,52 @@
+<!--pages/stage/stage.wxml-->
+<view class='page'>
+  <scroll-view scroll-x class="bg-white nav">
+    <view class="flex text-center" bindtap="onChangeLevel">
+      <block wx:for="{{levelList}}">
+        <view id='{{index}}' class="cu-item flex-sub {{levelCurIndex === index ? 'text-orange cur' : '' }}">
+          {{item}}
+        </view>
+    </block>
+    </view>
+  </scroll-view>
+
+  <!-- TODO（盈利点）：“加锁”，用户得按顺序 解题 ，不然就观看 激励视频 进行题目的解锁 。 -->
+  <view class="easy-list grid col-4 padding-sm" wx:if="{{levelList[levelCurIndex] === '容易'}}"
+    data-level="easy"
+    bindtap="onChooseOneIssue"
+  >
+    <block wx:for="{{easyIssueList}}">
+      <view id='{{index}}' class="margin-tb-sm text-center">
+      <button id='{{index}}' size="mini" class="easy-item cu-btn round">
+        {{index + 1}}
+      </button>
+      </view>
+    </block>
+  </view>
+
+  <view class="easy-list grid col-4 padding-sm" wx:elif="{{levelList[levelCurIndex] === '中等'}}"
+    data-level="mid"
+    bindtap="onChooseOneIssue"
+  >
+    <block wx:for="{{midIssueList}}">
+      <view id='{{index}}' class="margin-tb-sm text-center">
+      <button id='{{index}}' size="mini" class="easy-item cu-btn round">
+        {{index + 1}}
+      </button>
+      </view>
+    </block>
+  </view>
+
+  <view class="easy-list grid col-4 padding-sm" wx:elif="{{levelList[levelCurIndex] === '困难'}}"
+    data-level="hard"
+    bindtap="onChooseOneIssue"
+  >
+    <block wx:for="{{hardIssueList}}">
+      <view id='{{index}}' class="margin-tb-sm text-center">
+      <button id='{{index}}' size="mini" class="easy-item cu-btn round">
+        {{index + 1}}
+      </button>
+      </view>
+    </block>
+  </view>
+</view>

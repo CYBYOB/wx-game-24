@@ -1,0 +1,17 @@
+/* components/case-list/case-list.wxss */
+/* TODO（优化）：看看有无更好的样式引入方式（目前自定义组件样式的隔离性较强） */
+/* 引入 color ui 的样式 */
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";
+
+/* 共计 */
+.total-count {
+  text-align: center;
+  margin: 40rpx 0 20rpx;
+}
+
+/* caseList 展示 */
+.case-item {
+  display: grid;
+  margin: 20rpx 0;
+}

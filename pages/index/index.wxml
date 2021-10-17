@@ -1,0 +1,10 @@
+<!--pages/index1/index.wxml-->
+<view class='page'>
+  <view class="content" bindtap='onClickOneNavItem'>
+    <button id='stage' class="stage cu-btn lg bg-grey">闯关模式</button>
+    <button id='calc-24' class="calc-24 cu-btn lg bg-grey">计算24点</button>
+    <button id='poker' class="poker lg bg-grey">扑克牌模式</button>
+    <button id='race' class="race cu-btn lg bg-grey">竞速模式</button>
+    <button id='about' class="about cu-btn lg bg-grey">关于（更多）</button>
+  </view>
+</view>

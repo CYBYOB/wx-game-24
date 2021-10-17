@@ -1,0 +1,14 @@
+<!--components/case-list/case-list.wxml-->
+<wxs module="filter" src="../../utils/filter.wxs"></wxs>
+
+<view class="case-list-wrapper">
+  <view class="total-count">共计 {{filter.getLengthOfList(caseList)}} 个</view>
+
+  <view class="case-list">
+    <scroll-view scroll-y style="height: 300rpx;">
+      <block wx:for="{{caseList}}">
+        <button class="case-item cu-btn bg-brown">{{item}}</button>
+      </block>
+    </scroll-view>
+  </view>
+</view>

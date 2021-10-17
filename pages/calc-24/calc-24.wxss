@@ -1,0 +1,33 @@
+/* pages/calc-24/calc-24.wxss */
+
+.tip {
+  margin-left: 26rpx;
+}
+
+/* 输入 4个数字 */
+.number-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx 0;
+}
+.number-item {
+  width: 120rpx;
+  height: 120rpx;
+  background: #cce6ff;
+  text-align: center;
+  margin: 0 20rpx;
+}
+
+/* 计算24点 */
+.mid {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20rpx 0 40rpx;
+}
+.calc-24 {
+  width: 250rpx !important;
+  height: 70rpx !important;
+  margin-right: 27rpx !important;
+}
+
+/* 结果展示 */

@@ -1,0 +1,4 @@
+<!--pages/about/about.wxml-->
+<view class="page">
+  我是 关于（更多）
+</view>

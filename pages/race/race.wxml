@@ -1,0 +1,4 @@
+<!--pages/race/race.wxml-->
+<view class="page">
+  我是 竞速模式
+</view>
